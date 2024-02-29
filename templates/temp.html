@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+</head>
+<body>
+    <h1>Todo App</h1>
+    <form action="/add" method="POST">
+        <label for="task">Task:</label><br>
+        <input type="text" id="task" name="task" placeholder="Enter your task"><br>
+        <label for="description">Description:</label><br>
+        <textarea id="description" name="description" placeholder="Enter task description"></textarea><br>
+        <button type="submit">Add Task</button>
+    </form>
+
+    <ul>
+        {% for task in tasks %}
+            <li>
+                <strong>{{ task.task }}</strong> - {{ task.description }}
+                <a href="/delete/{{ task._id }}">[Delete]</a>
+            </li>
+        {% endfor %}
+    </ul>
+<div>
+  <table class="table">
+    <tr>
+      <th>uyger</th>
+      <th>wea</th>
+      <th>eeef</th>
+    </tr>
+    <tr>
+      <td>eawg</td>
+      <td>agerer</td>
+      <td>waegre</td>
+      <td colspan="2">ewrg</td> <!-- This cell spans two columns -->
+      <td colspan="2">ewrge</td> <!-- Another cell spanning two columns -->
+      <td>reger</td>
+      <td>argea</td>
+      <td>rgerga</td>
+    </tr>
+    <!-- ... (other rows) ... -->
+  </table>
+</div>
+
+</body>
+</html>
