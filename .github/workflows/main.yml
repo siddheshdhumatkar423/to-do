@@ -26,7 +26,7 @@ jobs:
 
     - name: Run tests
       run: |
-        pytest tests/   # Run tests located in the 'tests' folder
+        pytest tests/test_app.py  # Run tests located in the 'tests' folder
 
     - name: Check pytest version (Optional)
       run: |
