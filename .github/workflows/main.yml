@@ -5,8 +5,7 @@ on:
     branches:
       - master  # Trigger the action when pushing to master branch
   pull_request:
-    branches:
-      - master  # Trigger the action when making a PR to master branch
+    
 
 jobs:
   build:
