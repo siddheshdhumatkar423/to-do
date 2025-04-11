@@ -3,7 +3,7 @@ name: Flask App CI/CD
 on:
   push:
     branches:
-      - master  # Trigger the action when pushing to master branch
+      - main 
   pull_request:
     
 
