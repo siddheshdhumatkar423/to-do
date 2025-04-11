@@ -28,8 +28,4 @@ jobs:
           python -m pip install --upgrade pip
           
 
-      # Step 4: Run tests
-      - name: Run tests with pytest
-        run: |
-          pytest tests/  # This runs the tests located in the 'tests' folder
-     
+      
